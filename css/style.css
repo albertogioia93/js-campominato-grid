@@ -37,4 +37,13 @@ main {
     height: 500px;
     width: 500px;
     background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.cella {
+    border: 1px solid black;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
 }
