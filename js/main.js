@@ -6,6 +6,7 @@ function creareCella(element, className, htmlValore){
    cellaCreata.innerText = htmlValore;
 
    cellaCreata.addEventListener('click', function() {
+       cellaCreata.style.backgroundColor = "blue";
        console.log(htmlValore);
    });
 
