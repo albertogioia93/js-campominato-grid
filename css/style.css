@@ -4,6 +4,37 @@
     box-sizing: border-box;
 }
 
+
 body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* height: 50px; */
+}
+
+img {
+    height: 100%;
+}
+
+main {
+    background-color: #7fffd4;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
     background-color: pink;
 }
