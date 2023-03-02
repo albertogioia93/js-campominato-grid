@@ -6,7 +6,7 @@ function creareCella(element, className, htmlValore){
    cellaCreata.innerText = htmlValore;
 
    cellaCreata.addEventListener('click', function() {
-       alert(htmlValore);
+       console.log(htmlValore);
    });
 
    return cellaCreata;
@@ -17,17 +17,23 @@ function elementoAppeso(containerElement, htmlElement){
 }
 
 
-const contenitore = document.querySelector('.container');
+// const contenitore = document.querySelector('.container');
 
-for(let i = 1; i <= 100; i++){
-    const elementoCreato = creareCella('div', 'cella', i);
-    elementoAppeso(contenitore, elementoCreato);
-}
+// for(let i = 1; i <= 100; i++){
+//     const elementoCreato = creareCella('div', 'cella', i);
+//     elementoAppeso(contenitore, elementoCreato);
+// }
 
 
 
-// const bottoneClick = document.querySelector('button');
+const bottoneClick = document.querySelector('button');
 
-// bottoneClick.addEventListener('click', function() {
-//     alert('bottone cliccato');
-// });
+bottoneClick.addEventListener('click', function() {
+    
+    const contenitore = document.querySelector('.container');
+
+    for(let i = 1; i <= 100; i++){
+        const elementoCreato = creareCella('div', 'cella', i);
+        elementoAppeso(contenitore, elementoCreato);
+    }
+});
